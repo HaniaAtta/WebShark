@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="user.css" />
+    <title>Startup Profile Setup</title>
+</head>
+<body>
+    <div class="container">
+        <div class="signin-signup">
+            <form id="profile-form">
+                <h2 class="title">Startup Profile Setup</h2>
+                <br>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Startup Name" required />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Logo URL" required />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <textarea placeholder="Description" required></textarea>
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Industries" required />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="number" placeholder="Funding Raised" required />
+                </div>
+                <br>
+                <h3>Milestones</h3>
+                <br>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Milestone (e.g., Founded)" required />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Custom Milestone" />
+                </div><br>
+                <h3>Startup Type</h3><br>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="service-based" name="startup-type" value="service-based" />
+                    <label for="service-based">Service-Based</label>
+                    <input type="checkbox" id="product-based" name="startup-type" value="product-based" />
+                    <label for="product-based">Product-Based</label>
+                    <input type="checkbox" id="hybrid" name="startup-type" value="hybrid" />
+                    <label for="hybrid">Hybrid</label>
+                </div>
+                <br>
+            
+                <button type="submit" id="complete-registration" class="btn">Complete Registration</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        document.getElementById('complete-registration').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+            // Redirect to the home page
+            window.location.href = 'home.html'; // Change this to your actual URL
+        });
+    </script>
+    <script src="user.js"></script>
+</body>
+</html>
